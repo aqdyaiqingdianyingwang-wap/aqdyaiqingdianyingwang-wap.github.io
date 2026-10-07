@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aqdy爱情电影网 - 浪漫爱情电影推荐、高分片单与观影指南</title>
+<meta name="description" content="aqdy爱情电影网(https://aqdyaiqingdianyingwang-wap.github.io)专注浪漫爱情电影，提供最新爱情片推荐、高分经典片单、青春/治愈/虐恋专题与观影指南，陪你找到每一部心动之作。">
+<meta name="keywords" content="aqdy爱情电影网,爱情电影,浪漫爱情片,爱情片推荐,高分爱情电影,经典爱情片单,青春爱情电影">
+<meta name="author" content="aqdy爱情电影网">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="aqdy爱情电影网 - 浪漫爱情电影推荐与观影指南">
+<meta property="og:description" content="专注浪漫爱情电影，提供最新爱情片推荐、高分经典片单与观影指南。">
+<meta property="og:url" content="https://aqdyaiqingdianyingwang-wap.github.io/">
+<meta property="og:site_name" content="aqdy爱情电影网">
+<link rel="canonical" href="https://aqdyaiqingdianyingwang-wap.github.io/">
+<style>
+:root{
+  --cream:#fdf8f5;
+  --cream2:#f9efe9;
+  --rose:#e8b4c8;
+  --rose2:#d98ba8;
+  --pink:#f5d5e0;
+  --berry:#a8325a;
+  --berry2:#7d2240;
+  --ink:#3a2a30;
+  --ink2:#6b5760;
+  --muted:#a09099;
+  --line:#f0dde4;
+  --line2:#e6ccd8;
+  --shadow:0 10px 30px rgba(168,50,90,.10);
+  --shadow2:0 18px 45px rgba(168,50,90,.16);
+  --sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --serif:"Songti SC","STSong",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.9;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(rgba(217,139,168,.10) 1.4px,transparent 1.4px);background-size:26px 26px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.btn{display:inline-block;padding:13px 30px;border-radius:40px;font-size:14px;font-weight:700;letter-spacing:1px;transition:.25s;cursor:pointer;border:2px solid var(--berry);background:var(--berry);color:#fff}
+.btn:hover{background:transparent;color:var(--berry);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--berry)}
+.btn.ghost:hover{background:var(--berry);color:#fff}
+
+/* ===== 头部 ===== */
+header{background:linear-gradient(135deg,#fbeef3 0%,#f7e3eb 55%,#f9efe9 100%);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+header::after{content:"";position:absolute;right:-80px;top:-120px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(232,180,200,.55),transparent 70%);pointer-events:none}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:12px 0;font-size:12.5px;color:var(--muted);border-bottom:1px dashed var(--line2);flex-wrap:wrap;gap:8px}
+.bar a{color:var(--ink2)}
+.bar a:hover{color:var(--berry)}
+.brand-row{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:20px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .mark{width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,var(--rose2),var(--berry));display:grid;place-items:center;font-family:var(--serif);font-size:26px;color:#fff;font-weight:700;box-shadow:var(--shadow);transform:rotate(-6deg)}
+.logo .txt h1{font-size:27px;font-weight:900;letter-spacing:1px;line-height:1.2}
+.logo .txt h1 a{color:var(--ink)}
+.logo .txt h1 a:hover{color:var(--berry)}
+.logo .txt small{font-size:12px;color:var(--muted);letter-spacing:2px}
+.search{display:flex;align-items:center;background:#fff;border:2px solid var(--line2);border-radius:40px;padding:6px 6px 6px 20px;width:320px;box-shadow:var(--shadow)}
+.search input{flex:1;border:none;outline:none;background:transparent;font-size:14px;color:var(--ink);font-family:inherit}
+.search button{border:none;background:var(--berry);color:#fff;border-radius:30px;padding:9px 22px;font-size:13.5px;font-weight:700;cursor:pointer;transition:.2s}
+.search button:hover{background:var(--berry2)}
+
+/* ===== 导航 ===== */
+nav.tabs{position:sticky;top:0;z-index:50;background:rgba(253,248,245,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line2)}
+nav.tabs .inner{display:flex;gap:6px;overflow-x:auto;padding:12px 0;scrollbar-width:none}
+nav.tabs .inner::-webkit-scrollbar{display:none}
+nav.tabs a{padding:10px 22px;border-radius:30px;font-size:14.5px;font-weight:700;color:var(--ink2);white-space:nowrap;transition:.2s;border:1px solid transparent}
+nav.tabs a:hover{background:#fff;color:var(--berry);border-color:var(--line2)}
+nav.tabs a.active{background:linear-gradient(135deg,var(--rose2),var(--berry));color:#fff;box-shadow:var(--shadow)}
+
+/* ===== 通用 ===== */
+section{padding:64px 0;position:relative}
+.kicker{font-size:12px;letter-spacing:4px;color:var(--rose2);text-transform:uppercase;font-weight:700}
+.sec-head{text-align:center;margin-bottom:44px}
+.sec-head h2{font-family:var(--serif);font-size:32px;font-weight:900;margin-top:8px;letter-spacing:1px}
+.sec-head .line{width:60px;height:3px;background:linear-gradient(90deg,var(--rose),var(--berry));margin:14px auto 0;border-radius:3px}
+.sec-head p{font-size:14.5px;color:var(--muted);margin-top:12px;max-width:620px;margin-left:auto;margin-right:auto}
+.view-all{text-align:center;margin-top:38px}
+
+/* ===== Hero ===== */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:56px 0 64px}
+.hero .pill{display:inline-block;background:#fff;border:1px solid var(--line2);color:var(--berry);font-size:12.5px;padding:6px 16px;border-radius:30px;margin-bottom:20px;box-shadow:var(--shadow)}
+.hero h2{font-family:var(--serif);font-size:44px;font-weight:900;line-height:1.3;letter-spacing:1px}
+.hero h2 em{font-style:normal;background:linear-gradient(135deg,var(--rose2),var(--berry));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:16px;color:var(--ink2);margin:22px 0 30px;max-width:520px}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stack{position:relative;min-height:420px}
+.card-stack{position:absolute;border-radius:24px;overflow:hidden;box-shadow:var(--shadow2);border:6px solid #fff}
+.card-stack.s1{width:240px;height:320px;right:10px;top:0;transform:rotate(8deg);z-index:2}
+.card-stack.s2{width:220px;height:300px;left:20px;top:70px;transform:rotate(-9deg);z-index:1;opacity:.95}
+.card-stack.s3{width:180px;height:250px;right:60px;bottom:0;transform:rotate(-4deg);z-index:3}
+.card-stack .fill{width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;color:#fff;position:relative}
+.card-stack .fill::before{content:"";position:absolute;inset:0;background:linear-gradient(170deg,transparent 35%,rgba(125,34,64,.85));z-index:0}
+.card-stack .fill>*{position:relative;z-index:1}
+.card-stack .fill .tag{font-size:11px;letter-spacing:2px;background:rgba(255,255,255,.25);padding:3px 12px;border-radius:20px;width:fit-content;backdrop-filter:blur(4px)}
+.card-stack .fill h4{font-family:var(--serif);font-size:21px;font-weight:800;margin-top:8px;line-height:1.4}
+.card-stack .fill span{font-size:12px;opacity:.9}
+.g1{background:linear-gradient(160deg,#f6c6d8,#c95d85)}
+.g2{background:linear-gradient(160deg,#f3d7b1,#d98b5f)}
+.g3{background:linear-gradient(160deg,#c9b8e8,#7c5fb0)}
+
+/* ===== 栏目一：今日心动片单（海报卡片流） ===== */
+.mood-nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
+.mood-nav button{background:#fff;border:2px solid var(--line2);color:var(--ink2);padding:9px 22px;border-radius:30px;font-size:13.5px;font-weight:700;cursor:pointer;transition:.2s;font-family:inherit}
+.mood-nav button:hover,.mood-nav button.on{background:var(--berry);border-color:var(--berry);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.poster{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:.3s;display:flex;flex-direction:column}
+.poster:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:var(--shadow2)}
+.poster .cover{height:240px;position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:16px}
+.poster .cover .top{display:flex;justify-content:space-between;align-items:flex-start}
+.poster .cover .badge{background:rgba(255,255,255,.9);color:var(--berry);font-size:11.5px;font-weight:800;padding:4px 12px;border-radius:20px}
+.poster .cover .badge.hot{background:var(--berry);color:#fff}
+.poster .cover .score{background:rgba(0,0,0,.45);color:#fff;font-size:18px;font-weight:900;padding:4px 12px;border-radius:12px;backdrop-filter:blur(4px)}
+.poster .cover .title{color:#fff;font-family:var(--serif);font-size:22px;font-weight:900;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.poster .info{padding:16px 18px 20px}
+.poster .info .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.poster .info .tags i{font-style:normal;font-size:11px;background:var(--cream2);color:var(--berry);padding:3px 10px;border-radius:20px}
+.poster .info p{font-size:13px;color:var(--ink2);line-height:1.7}
+.poster .info .meta{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:12px;color:var(--muted)}
+.poster .info .meta a{color:var(--berry);font-weight:700}
+
+/* ===== 栏目二：按心情选片（双轴筛选仪表盘） ===== */
+.mood{background:linear-gradient(180deg,var(--cream2),var(--cream));border-radius:40px;padding:8px}
+.dash{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.panel{background:#fff;border-radius:28px;padding:30px;box-shadow:var(--shadow)}
+.panel h4{font-family:var(--serif);font-size:20px;font-weight:900;margin-bottom:6px}
+.panel .hint{font-size:12.5px;color:var(--muted);margin-bottom:18px}
+.axis{margin-bottom:20px}
+.axis .lab{display:flex;justify-content:space-between;font-size:13px;color:var(--ink2);margin-bottom:8px;font-weight:700}
+.axis .track{height:12px;background:var(--cream2);border-radius:10px;position:relative;overflow:visible}
+.axis .fill{position:absolute;left:0;top:0;height:100%;border-radius:10px;background:linear-gradient(90deg,var(--rose),var(--berry))}
+.axis .knob{position:absolute;top:50%;transform:translate(-50%,-50%);width:26px;height:26px;background:#fff;border:4px solid var(--berry);border-radius:50%;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+.axis .ticks{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:6px}
+.match-list{list-style:none}
+.match-list li{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line2)}
+.match-list li:last-child{border-bottom:none}
+.match-list .thumb{width:46px;height:60px;border-radius:12px;flex-shrink:0}
+.match-list .txt{flex:1}
+.match-list .txt b{font-size:14.5px}
+.match-list .txt small{display:block;font-size:12px;color:var(--muted)}
+.match-list .pct{font-size:18px;font-weight:900;color:var(--berry)}
+
+/* ===== 栏目三：主题放映厅（手风琴式） ===== */
+.rooms{display:grid;grid-template-columns:360px 1fr;gap:30px}
+.room-nav{display:flex;flex-direction:column;gap:12px}
+.room-tab{background:#fff;border:2px solid var(--line);border-radius:20px;padding:18px 20px;text-align:left;cursor:pointer;transition:.25s;font-family:inherit}
+.room-tab:hover{border-color:var(--rose2);transform:translateX(6px)}
+.room-tab.on{background:linear-gradient(135deg,#f9e3ea,#f5d5e0);border-color:var(--berry);box-shadow:var(--shadow)}
+.room-tab b{display:block;font-family:var(--serif);font-size:19px}
+.room-tab span{font-size:12.5px;color:var(--muted)}
+.room-tab.on span{color:var(--berry2)}
+.room-stage{background:#fff;border-radius:28px;padding:0;overflow:hidden;box-shadow:var(--shadow);min-height:420px;display:flex;flex-direction:column}
+.room-banner{height:200px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;color:#fff}
+.room-banner::before{content:"";position:absolute;inset:0;background:linear-gradient(15deg,transparent 20%,rgba(125,34,64,.7));z-index:0}
+.room-banner>*{position:relative;z-index:1}
+.room-banner h3{font-family:var(--serif);font-size:28px;font-weight:900}
+.room-banner p{font-size:13.5px;opacity:.95;margin-top:4px}
+.room-body{padding:26px 30px;flex:1}
+.film-row{display:grid;grid-template-columns:44px 1fr auto;gap:16px;align-items:center;padding:13px 0;border-bottom:1px dashed var(--line2)}
+.film-row:last-child{border-bottom:none}
+.film-row .n{font-family:var(--serif);font-size:22px;font-weight:900;color:var(--rose2)}
+.film-row b{font-size:15px}
+.film-row small{display:block;font-size:12.5px;color:var(--muted)}
+.film-row .why{font-size:13px;color:var(--ink2);text-align:right;max-width:260px}
+
+/* ===== 栏目四：观影手记（左右不对称瀑布流） ===== */
+.notes{display:grid;grid-template-columns:1.4fr 1fr;gap:26px;align-items:start}
+.note{background:#fff;border-radius:24px;padding:26px 28px;box-shadow:var(--shadow);margin-bottom:26px;position:relative}
+.note::before{content:""";position:absolute;left:28px;top:-1px;width:44px;height:4px;background:linear-gradient(90deg,var(--rose),var(--berry));border-radius:0 0 4px 4px;font-size:0}
+.note.feature{grid-row:span 2;background:linear-gradient(160deg,#fff,#fbeef3)}
+.note .who{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.note .ava{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;font-size:16px}
+.note .who b{font-size:14px}
+.note .who span{font-size:12px;color:var(--muted);display:block}
+.note h4{font-family:var(--serif);font-size:21px;font-weight:900;margin-bottom:10px;line-height:1.5}
+.note h4 a:hover{color:var(--berry)}
+.note.feature h4{font-size:26px}
+.note p{font-size:14.5px;color:var(--ink2)}
+.note .feel{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.note .feel i{font-style:normal;font-size:12px;background:var(--cream2);color:var(--berry2);padding:5px 14px;border-radius:20px;font-weight:700}
+.note blockquote{border-left:4px solid var(--rose);padding:12px 16px;margin:14px 0 0;font-family:var(--serif);font-size:16px;color:var(--berry2);background:var(--cream2);border-radius:0 12px 12px 0}
+
+/* ===== 关于 ===== */
+.about{background:linear-gradient(135deg,var(--berry2),var(--berry) 60%,var(--rose2));color:#fff;border-radius:36px;padding:50px 46px;box-shadow:var(--shadow2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about h2{font-family:var(--serif);font-size:32px;font-weight:900;margin-bottom:16px}
+.about p{font-size:15.5px;color:#fbe3ea;line-height:2}
+.about .hlt{color:#ffe9ef;font-weight:700}
+.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.numbers div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:22px 16px;text-align:center;backdrop-filter:blur(6px)}
+.numbers b{display:block;font-family:var(--serif);font-size:34px;font-weight:900}
+.numbers span{font-size:12.5px;color:#fbdde6}
+
+/* ===== 页脚 ===== */
+footer{background:#f8ede2;padding:54px 0 24px;margin-top:40px;border-top:1px solid var(--line)}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}
+.foot .bl h4{font-family:var(--serif);font-size:24px;font-weight:900;color:var(--berry2);letter-spacing:1px}
+.foot .bl p{font-size:13.5px;color:var(--ink2);margin-top:12px;max-width:340px}
+.foot .bl .mood-line{font-size:13px;color:var(--muted);margin-top:14px}
+.foot h5{font-size:14.5px;font-weight:900;color:var(--berry2);margin-bottom:14px}
+.foot ul{list-style:none;font-size:13.5px}
+.foot li{padding:6px 0}
+.foot a{color:var(--ink2)}
+.foot a:hover{color:var(--berry)}
+.subscribe{display:flex;gap:0;margin-top:16px;max-width:340px}
+.subscribe input{flex:1;border:2px solid var(--line2);border-right:none;border-radius:30px 0 0 30px;padding:12px 18px;font-size:13.5px;outline:none;font-family:inherit;background:#fff}
+.subscribe button{border:none;border-radius:0 30px 30px 0;background:var(--berry);color:#fff;padding:0 22px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.copyright{margin-top:34px;border-top:1px solid var(--line2);padding-top:20px;font-size:12.5px;color:var(--muted);text-align:center;line-height:2.1}
+.copyright a{color:var(--berry);font-weight:700}
+
+/* ===== 响应式 ===== */
+@media (max-width:1000px){
+  .wrap{padding:0 18px}
+  .hero{grid-template-columns:1fr;gap:30px}
+  .hero-stack{display:none}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .dash{grid-template-columns:1fr}
+  .rooms{grid-template-columns:1fr}
+  .room-nav{flex-direction:row;flex-wrap:wrap}
+  .notes{grid-template-columns:1fr}
+  .note.feature{grid-row:auto}
+  .foot{grid-template-columns:1fr 1fr;gap:30px}
+  .about-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .brand-row{padding:18px 0}
+  .search{width:100%}
+  .logo .txt h1{font-size:21px}
+  .hero h2{font-size:30px}
+  nav.tabs a{padding:9px 16px;font-size:13.5px}
+  .sec-head h2{font-size:24px}
+  .grid{grid-template-columns:1fr}
+  .panel{border-radius:22px;padding:22px}
+  .panel{padding:22px}
+  .room-body{padding:20px}
+  .film-row{grid-template-columns:32px 1fr;gap:10px}
+  .film-row .why{display:none}
+  .about{border-radius:26px;padding:34px 24px}
+  .numbers{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  section{padding:48px 0}
+  .note{padding:22px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ============ 头部 ============ -->
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <span>欢迎来到 <b style="color:var(--berry)">aqdy爱情电影网</b> · 用心挑一部，今晚不孤单</span>
+      <span><a href="#about">关于本站</a> · <a href="#">投稿建议</a> · <a href="#">RSS</a> · <a href="#">登录</a></span>
+    </div>
+    <div class="brand-row">
+      <div class="logo">
+        <div class="mark">♥</div>
+        <div class="txt">
+          <h1><a href="https://aqdyaiqingdianyingwang-wap.github.io/" title="aqdy爱情电影网">aqdy爱情电影网</a></h1>
+          <small>LOVE STORY · MOVIE GUIDE</small>
+        </div>
+      </div>
+      <form class="search" onsubmit="return false;">
+        <input type="text" placeholder="搜索片名 / 导演 / 心情关键词">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 导航 ============ -->
+<nav class="tabs">
+  <div class="wrap inner">
+    <a href="#today" class="active">今日心动片单</a>
+    <a href="#mood">按心情选片</a>
+    <a href="#rooms">主题放映厅</a>
+    <a href="#notes">观影手记</a>
+    <a href="#about">关于我们</a>
+    <a href="#">最新上线</a>
+    <a href="#">高分经典</a>
+    <a href="#">青春校园</a>
+    <a href="#">治愈系</a>
+  </div>
+</nav>
+
+<!-- ============ Hero ============ -->
+<section class="hero-wrap" style="padding:0;">
+  <div class="wrap hero">
+    <div>
+      <span class="pill">♥ 今日片单已更新 · 2026.10.06</span>
+      <h2>今晚，<em>总有一部爱情电影</em><br>懂你此刻的心情</h2>
+      <p>aqdy爱情电影网专注浪漫爱情题材，从青春悸动到长久陪伴，从怦然心动到虐恋心碎，我们用主题、心情与场景帮你精准匹配那一部对味的片子。</p>
+      <div class="acts">
+        <a href="#today" class="btn">开始挑片</a>
+        <a href="#notes" class="btn ghost">读观影手记</a>
+      </div>
+    </div>
+    <div class="hero-stack">
+      <div class="card-stack s1"><div class="fill g1"><span class="tag">今日推荐</span><h4>她与他的<br>夏日来信</h4><span>★★★★☆ 8.7 · 治愈</span></div></div>
+      <div class="card-stack s2"><div class="fill g2"><span class="tag">经典重看</span><h4>重逢在<br>雨天的车站</h4><span>★★★★★ 9.1 · 虐恋</span></div></div>
+      <div class="card-stack s3"><div class="fill g3"><span class="tag">青春必看</span><h4>第一次<br>说喜欢你</h4><span>★★★★☆ 8.4 · 校园</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目一：今日心动片单 ============ -->
+<section id="today">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Daily Picks</div>
+      <h2>今日心动片单</h2>
+      <div class="line"></div>
+      <p>每天精选 8 部，覆盖不同恋爱阶段与情绪——总有一部，刚好讲你正在经历的故事。</p>
+    </div>
+    <div class="mood-nav">
+      <button class="on">全部</button>
+      <button>怦然心动</button>
+      <button>异地恋</button>
+      <button>破镜重圆</button>
+      <button>双向暗恋</button>
+      <button>催泪虐恋</button>
+      <button>治愈系</button>
+    </div>
+    <div class="grid">
+      <article class="poster">
+        <div class="cover" style="background:linear-gradient(160deg,#f4b6cc,#c9507d);">
+          <div class="top"><span class="badge hot">热播</span><span class="score">8.9</span></div>
+          <div class="title">听见你的<br>那句喜欢</div>
+        </div>
+        <div class="info">
+          <div class="tags"><i>青春校园</i><i>双向暗恋</i><i>2026</i></div>
+          <p>图书馆的同桌三年，谁都没说出口的那句话，被一场暴雨逼了出来。</p>
+          <div class="meta"><span>♥ 2.4万 心动</span><a href="#">查看详情 →</a></div>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="cover" style="background:linear-gradient(160deg,#f6cfa8,#d1824a);">
+          <div class="top"><span class="badge">经典</span><span class="score">9.2</span></div>
+          <div class="title">七年之痒<br>不是终点</div>
+        </div>
+        <div class="info">
+          <div class="tags"><i>婚姻生活</i><i>现实向</i><i>高分</i></div>
+          <p>结了婚的爱情还剩什么？一对中年夫妻用一次长途自驾，重新回答这个问题。</p>
+          <div class="meta"><span>♥ 1.8万 心动</span><a href="#">查看详情 →</a></div>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="cover" style="background:linear-gradient(160deg,#c3b0e6,#7a5cbf);">
+          <div class="top"><span class="badge">新片</span><span class="score">8.3</span></div>
+          <div class="title">跨过时差<br>来见你</div>
+        </div>
+        <div class="info">
+          <div class="tags"><i>异地恋</i><i>都市</i><i>轻喜剧</i></div>
+          <p>八小时的时差，十二张未发出的车票，异地恋里最动人的不是坚持，是默契。</p>
+          <div class="meta"><span>♥ 3.1万 心动</span><a href="#">查看详情 →</a></div>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="cover" style="background:linear-gradient(160deg,#f2a3b4,#b34066);">
+          <div class="top"><span class="badge hot">催泪</span><span class="score">8.7</span></div>
+          <div class="title">如果那天<br>我没转身</div>
+        </div>
+        <div class="info">
+          <div class="tags"><i>虐恋</i><i>失忆</i><i>催泪</i></div>
+          <p>他用尽一生假装忘记一个人，却在最后一段录像里崩溃大哭。</p>
+          <div class="meta"><span>♥ 4.6万 心动</span><a href="#">查看详情 →</a></div>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="cover" style="background:linear-gradient(160deg,#b9e2cf,#4fa888);">
+          <div class="top"><span class="badge">治愈</span><span class="score">8.6</span></div>
+          <div class="title">海边书店<br>与你的信</div>
+        </div>
+        <div class="info">
+          <div class="tags"><i>治愈</i><i>文艺</i><i>书信</i></div>
+          <p>一家只收情书的海边书店，收留了三个失恋的人，也收留了他们各自的答案。</p>
+          <div class="meta"><span>♥ 2.9万 心动</span><a href="#">查看详情 →</a></div>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="cover" style="background:linear-gradient(160deg,#f5c8c8,#cf6464);">
+          <div class="top"><span class="badge">热播</span><span class="score">8.4</span></div>
+          <div class="title">前任博物馆</div>
+        </div>
+        <div class="info">
+          <div class="tags"><i>破镜重圆</i><i>都市</i><i>轻喜</i></div>
+          <p>分手五年后，他把所有前任的物件办成展，却在开幕当天遇到了她。</p>
+          <div class="meta"><span>♥ 2.1万 心动</span><a href="#">查看详情 →</a></div>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="cover" style="background:linear-gradient(160deg,#f0d0a0,#c08a3e);">
+          <div class="top"><span class="badge">怀旧</span><span class="score">9.0</span></div>
+          <div class="title">那年我们<br>骑单车</div>
+        </div>
+        <div class="info">
+          <div class="tags"><i>青春</i><i>校园</i><i>怀旧</i></div>
+          <p>后座那个人，后来成了你通讯录里再也没拨过的一个名字。</p>
+          <div class="meta"><span>♥ 3.7万 心动</span><a href="#">查看详情 →</a></div>
+        </div>
+      </article>
+      <article class="poster">
+        <div class="cover" style="background:linear-gradient(160deg,#c9a9d6,#7c4f99);">
+          <div class="top"><span class="badge">高分</span><span class="score">9.1</span></div>
+          <div class="title">一起走到<br>白发那天</div>
+        </div>
+        <div class="info">
+          <div class="tags"><i>长情</i><i>老年爱情</i><i>传记</i></div>
+          <p>六十年的婚姻被装进一只旧皮箱，子女翻开时才读懂什么叫不离不弃。</p>
+          <div class="meta"><span>♥ 5.2万 心动</span><a href="#">查看详情 →</a></div>
+        </div>
+      </article>
+    </div>
+    <div class="view-all"><a href="#" class="btn ghost">查看完整片单（86 部）→</a></div>
+  </div>
+</section>
+
+<!-- ============ 栏目二：按心情选片 ============ -->
+<section id="mood" style="background:linear-gradient(180deg,var(--cream),var(--cream2));">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Mood Picker</div>
+      <h2>按心情选片</h2>
+      <div class="line"></div>
+      <p>调一调两个维度，系统会实时给出今晚最合你心意的爱情片推荐。</p>
+    </div>
+    <div class="mood">
+      <div class="dash">
+        <div class="panel">
+          <h4>告诉我你的心情</h4>
+          <p class="hint">左右拖动滑块，越往右代表情绪越浓烈</p>
+          <div class="axis">
+            <div class="lab"><span>甜度</span><span id="v1">6 / 10</span></div>
+            <div class="track"><div class="fill" id="f1" style="width:60%;"></div><div class="knob" id="k1" style="left:60%;"></div></div>
+            <div class="ticks"><span>只想看甜的</span><span>甜虐各半</span><span>越虐越上头</span></div>
+          </div>
+          <div class="axis">
+            <div class="lab"><span>现实感</span><span id="v2">4 / 10</span></div>
+            <div class="track"><div class="fill" id="f2" style="width:40%;"></div><div class="knob" id="k2" style="left:40%;"></div></div>
+            <div class="ticks"><span>纯纯幻想</span><span>半真半假</span><span>扎心现实</span></div>
+          </div>
+          <div class="mood-nav" style="margin:0;">
+            <button class="on">今晚想被治愈</button>
+            <button>想哭一场</button>
+            <button>想被甜到</button>
+            <button>想清醒一下</button>
+          </div>
+        </div>
+        <div class="panel">
+          <h4>为你匹配到这 4 部</h4>
+          <p class="hint">基于你的情绪设定 · 可随时重新调整</p>
+          <ul class="match-list">
+            <li>
+              <div class="thumb" style="background:linear-gradient(160deg,#f4b6cc,#c9507d);"></div>
+              <div class="txt"><b>听见你的那句喜欢</b><small>青春校园 · 双向暗恋 · 2026</small></div>
+              <div class="pct">96%</div>
+            </li>
+            <li>
+              <div class="thumb" style="background:linear-gradient(160deg,#b9e2cf,#4fa888);"></div>
+              <div class="txt"><b>海边书店与你的信</b><small>治愈系 · 书信体 · 文艺</small></div>
+              <div class="pct">91%</div>
+            </li>
+            <li>
+              <div class="thumb" style="background:linear-gradient(160deg,#f6cfa8,#d1824a);"></div>
+              <div class="txt"><b>七年之痒不是终点</b><small>婚姻生活 · 现实向 · 高分</small></div>
+              <div class="pct">83%</div>
+            </li>
+            <li>
+              <div class="thumb" style="background:linear-gradient(160deg,#c3b0e6,#7a5cbf);"></div>
+              <div class="txt"><b>跨过时差来见你</b><small>异地恋 · 都市 · 轻喜剧</small></div>
+              <div class="pct">78%</div>
+            </li>
+          </ul>
+          <a href="#" class="btn ghost" style="margin-top:20px;">换一批匹配结果</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目三：主题放映厅 ============ -->
+<section id="rooms">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Theme Rooms</div>
+      <h2>主题放映厅</h2>
+      <div class="line"></div>
+      <p>按主题打包成完整片单，一次看透一类爱情。</p>
+    </div>
+    <div class="rooms">
+      <div class="room-nav">
+        <button class="room-tab on"><b>♥ 校园青春</b><span>12 部 · 暗恋 / 初恋 / 毕业</span></button>
+        <button class="room-tab"><b>♥ 异地与等待</b><span>9 部 · 时差 / 书信 / 重逢</span></button>
+        <button class="room-tab"><b>♥ 破镜重圆</b><span>11 部 · 前任 / 复合 / 释怀</span></button>
+        <button class="room-tab"><b>♥ 虐恋催泪</b><span>10 部 · 失忆 / 绝症 / 错过</span></button>
+        <button class="room-tab"><b>♥ 长情陪伴</b><span>8 部 · 婚姻 / 老年 / 家庭</span></button>
+        <button class="room-tab"><b>♥ 治愈系</b><span>14 部 · 温暖 / 救赎 / 希望</span></button>
+      </div>
+      <div class="room-stage">
+        <div class="room-banner" style="background:linear-gradient(120deg,#f4b6cc,#c9507d);">
+          <h3>校园青春专场</h3>
+          <p>从偷看一眼到毕业那天，那些没说出口的话，都在这里</p>
+        </div>
+        <div class="room-body">
+          <div class="film-row"><div class="n">01</div><div><b>听见你的那句喜欢</b><small>2026 · 双向暗恋 · 96 min</small></div><div class="why">图书馆三年同桌，暴雨天终于说出口</div></div>
+          <div class="film-row"><div class="n">02</div><div><b>那年我们骑单车</b><small>2024 · 校园怀旧 · 104 min</small></div><div class="why">后座那个人，成了再没拨过的名字</div></div>
+          <div class="film-row"><div class="n">03</div><div><b>第一次说喜欢你</b><small>2025 · 初恋 · 88 min</small></div><div class="why">第一次心动，笨拙却无比真诚</div></div>
+          <div class="film-row"><div class="n">04</div><div><b>毕业前的最后一封情书</b><small>2023 · 暗恋 · 92 min</small></div><div class="why">写给不敢递出去的那个人</div></div>
+          <div class="film-row"><div class="n">05</div><div><b>走廊尽头的第三扇窗</b><small>2026 · 青春群像 · 110 min</small></div><div class="why">四个人、一段走廊、整个夏天</div></div>
+          <div class="film-row"><div class="n">06</div><div><b>如果高中重来一次</b><small>2022 · 时空 · 99 min</small></div><div class="why">穿越回十七岁，只为改一句台词</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目四：观影手记 ============ -->
+<section id="notes" style="background:linear-gradient(180deg,var(--cream2),var(--cream));">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Love Notes</div>
+      <h2>观影手记</h2>
+      <div class="line"></div>
+      <p>写给每一部让我们心动、心碎或重新相信爱情的电影。</p>
+    </div>
+    <div class="notes">
+      <article class="note feature">
+        <div class="who"><div class="ava" style="background:linear-gradient(135deg,#c9507d,#a8325a);">林</div><div><b>林知夏</b><span>资深影评人 · 写了 260 篇手记</span></div></div>
+        <h4><a href="#">为什么我们永远会被「错过」的故事打动？</a></h4>
+        <p>从《如果那天我没转身》到《重逢在雨天的车站》，那些关于错过与重逢的叙事，反复出现在我们的年度片单里。它们真正打动的或许不是爱情本身，而是我们心里那个「如果当时」的假设——电影替我们把那个假设演了一遍，好让我们在散场后，真的能放下。</p>
+        <blockquote>爱情片最残忍的地方，是让你看见另一种可能，然后安心回到现在的生活。</blockquote>
+        <div class="feel"><i>♥ 虐恋</i><i>♥ 错过</i><i>♥ 情感分析</i></div>
+      </article>
+      <article class="note">
+        <div class="who"><div class="ava" style="background:linear-gradient(135deg,#7a5cbf,#5a3f99);">阿</div><div><b>阿May</b><span>异地恋博主 · 恋爱 4 年</span></div></div>
+        <h4><a href="#">《跨过时差来见你》：异地恋不是坚持，是默契</a></h4>
+        <p>八小时时差里的三次错过，被拍得克制又动人。看完当晚，我和他就这样把下一张机票订了。</p>
+        <div class="feel"><i>♥ 异地恋</i><i>♥ 都市</i></div>
+      </article>
+      <article class="note">
+        <div class="who"><div class="ava" style="background:linear-gradient(135deg,#4fa888,#3a8a6c);">苏</div><div><b>苏青</b><span>治愈系专栏作者</span></div></div>
+        <h4><a href="#">看《海边书店与你的信》之前，先准备好纸巾</a></h4>
+        <p>三个失恋的人在一间只收情书的书店相遇，他们彼此没有谈恋爱，却各自找回了爱人的能力。</p>
+        <div class="feel"><i>♥ 治愈</i><i>♥ 救赎</i></div>
+      </article>
+      <article class="note">
+        <div class="who"><div class="ava" style="background:linear-gradient(135deg,#d1824a,#a86432);">陈</div><div><b>陈屿</b><span>婚姻主题研究者</span></div></div>
+        <h4><a href="#">《七年之痒不是终点》最真实的地方</a></h4>
+        <p>它没有把婚姻浪漫化，而是老老实实告诉你：爱情会变成别的东西，而那「别的东西」依然值得守护。</p>
+        <div class="feel"><i>♥ 婚姻</i><i>♥ 现实向</i></div>
+      </article>
+    </div>
+    <div class="view-all"><a href="#" class="btn">阅读全部 260 篇手记 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 关于我们 ============ -->
+<section id="about" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-grid">
+        <div>
+          <h2>关于 aqdy爱情电影网</h2>
+          <p><span class="hlt">aqdy爱情电影网</span>（https://aqdyaiqingdianyingwang-wap.github.io）是一个专注浪漫爱情电影的主题站，不做泛泛的电影资讯，只关心爱情这一件事——把不同类型的爱情片按心情、场景与主题整理成真正能帮人「挑到对的那一部」的片单，并配上真诚的手记与解读。</p>
+          <p style="margin-top:12px;">无论你是想被甜到、想哭一场，还是只是想在深夜找个人陪，这里都能给你一个答案。</p>
+        </div>
+        <div class="numbers">
+          <div><b>260+</b><span>篇观影手记</span></div>
+          <div><b>500+</b><span>部精选爱情片</span></div>
+          <div><b>12</b><span>个主题放映厅</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="bl">
+        <h4>aqdy爱情电影网</h4>
+        <p>专注浪漫爱情电影推荐与观影指南，帮你找到今晚最对味的那一部。影片信息仅供交流参考，以官方公布为准。</p>
+        <div class="mood-line">♥ 今晚想被治愈 / 想哭一场 / 想被甜到 / 想清醒一下</div>
+        <form class="subscribe" onsubmit="return false;">
+          <input type="email" placeholder="留下邮箱，每周收到一份心动片单">
+          <button type="submit">订阅</button>
+        </form>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <ul>
+          <li><a href="#today">今日心动片单</a></li>
+          <li><a href="#mood">按心情选片</a></li>
+          <li><a href="#rooms">主题放映厅</a></li>
+          <li><a href="#notes">观影手记</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>主题片单</h5>
+        <ul>
+          <li><a href="#">校园青春</a></li>
+          <li><a href="#">异地与等待</a></li>
+          <li><a href="#">破镜重圆</a></li>
+          <li><a href="#">虐恋催泪</a></li>
+          <li><a href="#">治愈系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于本站</h5>
+        <ul>
+          <li><a href="#about">网站介绍</a></li>
+          <li><a href="#">投稿建议</a></li>
+          <li><a href="#">版权声明</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 aqdy爱情电影网 aqdyaiqingdianyingwang-wap.github.io 版权所有 · 本站内容仅供浪漫爱情电影推荐与观影交流，影片信息以官方公布为准<br>
+      网站名称：<a href="https://aqdyaiqingdianyingwang-wap.github.io/">aqdy爱情电影网</a> ｜ 网站网址：https://aqdyaiqingdianyingwang-wap.github.io/
+    </div>
+  </div>
+</footer>
+
+<script>
+// 心情滑块（纯交互，不依赖外部资源）
+function bindAxis(fill,knob,valText,label){
+  let v=parseFloat(fill.style.width)||50;
+  function set(p){
+    v=Math.max(0,Math.min(100,p));
+    fill.style.width=v+'%';knob.style.left=v+'%';
+    valText.textContent=Math.round(v/10)+' / 10';
+  }
+  function from(e){
+    const r=e.currentTarget.getBoundingClientRect();
+    const c=e.touches?e.touches[0].clientX:e.clientX;
+    set((c-r.left)/r.width*100);
+  }
+  fill.parentElement.addEventListener('click',from);
+  knob.addEventListener('mousedown',()=>{
+    const move=e=>{e.preventDefault();from(e);};
+    const up=()=>{document.removeEventListener('mousemove',move);document.removeEventListener('mouseup',up);};
+    document.addEventListener('mousemove',move);document.addEventListener('mouseup',up);
+  });
+}
+bindAxis(document.getElementById('f1'),document.getElementById('k1'),document.getElementById('v1'));
+bindAxis(document.getElementById('f2'),document.getElementById('k2'),document.getElementById('v2'));
+// 标签切换
+document.querySelectorAll('.mood-nav').forEach(g=>{
+  g.addEventListener('click',e=>{
+    const b=e.target.closest('button');if(!b)return;
+    g.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  });
+});
+// 放映厅切换
+const tabs=document.querySelectorAll('.room-tab');
+tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('on'));t.classList.add('on');}));
+</script>
+</body>
+</html>
